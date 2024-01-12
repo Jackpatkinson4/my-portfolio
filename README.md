@@ -2,6 +2,8 @@
 Make a simple HTML website and publish it using Github Pages.  
 View example: https://zirafa.github.io/simple-website-template/
 
+Link: https://jackpatkinson4.github.io/my-portfolio/
+
 ## Setup
 - Create a Github account (if you don't have one yet)
 - Fork this repository to copy it to your account, i.e. github.com/username/simple-website-template (you can rename it as well)
