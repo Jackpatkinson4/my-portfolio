@@ -23,7 +23,16 @@
 
     <!-- Want to add Bootstrap? -->
     <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-    
+    <style>
+      .wrap_left {
+        float: left;
+        margin: 10px;
+      }
+      .wrap_right {
+        float: right;
+        margin: 10px;
+      }
+    </style>
   </head>
   
   <body>
@@ -34,11 +43,10 @@
       
       <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
       <ul class="main-menu">
-        <li><a href="#home">home</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#skills">skills</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#contact">contact</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
       </ul>                 
     </header>
    
@@ -46,21 +54,42 @@
       <div class="inner">
         <div id="content"> 
           
-          <div id="home" class="content-region hide">
-            <h2>Hello! I'm Jack!</h2>
-            <p>
-              Aspiring computer programmer with interests in digital media and game development. 
-              This is a simple website template published with Github Pages. <a href="https://github.com/zirafa/simple-website-template">Fork this repository</a> to create your own site!
-            </p>
-          </div>
-          
+          <!-- About Page -->
           <div id="about" class="content-region hide">
-            <h2>About</h2>
-            <p>
-              Sed tempus urna et pharetra pharetra massa massa ultricies. Porttitor rhoncus dolor purus non enim praesent. Id aliquet risus feugiat in ante metus dictum. 
-            </p>
+            <h2>Hello, I'm Jack!</h2>
+            <div class="wrap_left">
+              <img
+                src="profile.jpg"
+                alt = "Profile Image"
+                height="auto"
+                width="275px"
+              />
+            </div>
+            <div>
+              <p>
+                I am an aspiring computer programmer based in <span style="font-weight: bold">Atlanta, Georgia</span> with interests in digital media and game development. 
+              </p>
+              <p>  
+                I am currently a senior at the <span style="font-weight: bold;">Georgia Institute of Technology</span> and I am currently persuing 
+                a <span style="font-weight: bold;">BS in Computer Science</span> with a concentration in 
+                <span style="font-weight: bold;">Media and Intelligence</span> with an expected graduation date 
+                of <span style="font-weight: bold;">Spring 2024.</span> I am also an active member of 
+                the <span style="font-weight: bold;">VGDev</span> (Video Game Development) 
+                club at Georgia Tech, where I have contributed to a large assortment of game projects 
+                in fields such as programming, game design, art, and music.
+              </p>
+              <p>
+                Outside of computer programming, I am also interested in listening to music, watching movies and tv shows, reading books, and of course, playing video games.
+              </p>
+            </div>
+            <div>
+              <ul class="main-menu">
+                <li><a href="Atkinson_Resume_11_21_2023.pdf">View Resume</a></li>
+              </ul>
+            </div>
           </div>
 
+          <!-- Skills Page -->
           <div id="skills" class="content-region hide">
             <h2>Skills</h2>
             <p>
@@ -87,7 +116,7 @@
     </div>
 
     <footer>  
-      Footer region
+      This is a simple website template published with Github Pages. <a href="https://github.com/zirafa/simple-website-template">Fork this repository</a> to create your own site!
     </footer>
     
     <!-- Load additional JS scripts here -->
