@@ -130,6 +130,29 @@ ul.main-menu li a.active {
   border-bottom-color:#ff216f;
 }
 
+a.button {
+  margin-right: 50px;
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size:1.5rem;
+  font-weight:700;
+  width: max-content;
+  border-radius: 4px;
+  background: #ff216f;
+  color:#FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  transition: all .3s ease-in-out 0s;
+
+}
+a.button:hover {
+  background: #FFFFFF;
+  color:#ff216f;
+  transition: all .3s ease-in-out 0s;
+  transform: translateY(-3px);
+}
 /* Utility classes */
 .hide {
   display:none;
