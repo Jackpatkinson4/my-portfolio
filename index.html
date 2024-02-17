@@ -23,6 +23,9 @@
 
     <!-- Want to add Bootstrap? -->
     <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
       .center {
         display: flex;
@@ -96,9 +99,72 @@
           <!-- Skills Page -->
           <div id="skills" class="content-region hide">
             <h2>Skills</h2>
-            <p>
-              Sed tempus urna et pharetra pharetra massa massa ultricies. Porttitor rhoncus dolor purus non enim praesent. Id aliquet risus feugiat in ante metus dictum. 
-            </p>
+            <div class="row">
+              <div class="column" onclick="openTab('b1');">Languages</div>
+              <div class="column" onclick="openTab('b2');">Frameworks/Libraries</div>
+            </div>
+            <div id="b1" class="containerTab" style="display:none">
+              <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+              <h3>Languages</h3>
+                <ul>
+                  <li>C#</li>
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>C/C++</li>
+                  <li>OpenGL</li>
+                  <li>HTML5</li>
+                  <li>CSS3/Sass</li>
+                  <li>JavaScript</li>
+                </ul>
+            </div>
+            <div id="b2" class="containerTab" style="display:none">
+              <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+              <h3>Engines and Frameworks</h3>
+                <ul>
+                  <li>Unity</li>
+                  <li>Godot</li>
+                  <li>Unreal Engine 4/5</li>
+                  <li>MonoGame</li>
+                  <li>libGDX</li>
+                  <li>LWJGL</li>
+                  <li>Raylib</li>
+                  <li>Processing</li>
+                  <li>NumPy</li>
+                  <li>Node.js</li>
+                </ul>
+            </div>
+            <div class="row">
+              <div class="column" onclick="openTab('b3');">Software and Tools</div>
+              <div class="column" onclick="openTab('b4');">Fields of Expertise</div>
+            </div>
+            <div id="b3" class="containerTab" style="display:none">
+              <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+              <h3>Software and Tools</h3>
+                <ul>
+                  <li>Microsoft Office</li>
+                  <li>Google Docs</li>
+                  <li>VSCode</li>
+                  <li>Git/GitHub</li>
+                  <li>Trello</li>
+                  <li>IntelliJ IDEA</li>
+                  <li>Blender</li>
+                  <li>Adobe Creative Cloud</li>
+                </ul>
+            </div>
+            <div id="b4" class="containerTab" style="display:none">
+              <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+              <h3>Fields of Expertise</h3>
+              <ul>
+                <li>Object-Oriented Programming</li>
+                <li>Scripting</li>
+                <li>Game Design</li>
+                <li>Digital Media</li>
+                <li>Computer Graphics/Tech Art</li>
+                <li>UI/UX Design</li>
+                <li>Artificial Intelligence</li>
+              </ul>
+            </div>
+
           </div>
 
           <div id="projects" class="content-region hide">
@@ -125,6 +191,15 @@
     
     <!-- Load additional JS scripts here -->
     <script type="text/javascript" src="script.js"></script>
-    
+    <script type="text/javascript" src="openTab.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 600,
+        easing: 'ease-in-sine',
+        delay: 100,
+      });
+    </script>
   </body>
 </html>
